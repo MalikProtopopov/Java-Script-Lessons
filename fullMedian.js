@@ -22,7 +22,6 @@ if (averageUsers > expectedUsers) {
 }
 
 // Сортируем массив
-
 for (let i = 0; i <= usersByDay.length - 2; i++) {
   let minValue = usersByDay[i];
 
@@ -36,9 +35,7 @@ for (let i = 0; i <= usersByDay.length - 2; i++) {
   }
 }
 
-
 // Рассчитываем медиану
-
 let median;
 if (usersByDay.length % 2 !== 0) {
   let medianIndex = (usersByDay.length - 1) / 2;
@@ -49,4 +46,12 @@ if (usersByDay.length % 2 !== 0) {
   median = (usersByDay[leftIndex] + usersByDay[rightIndex]) / 2;
 }
 
-console.log('Медианная посещаемость: ' + median)
+console.log('Медианная посещаемость: ' + median);
+
+
+if (median / averageUsers < 0.9) {
+  console.log( 'Есть подозрения в подтасовках!')
+  }
+else {
+  console.log('Подозрений в подтасовках нет!')
+  }
