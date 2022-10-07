@@ -1,0 +1,33 @@
+.pool {
+  display: flex;
+  flex-wrap: wrap;
+
+  min-height: 330px;
+  margin: 20px;
+  padding: 10px;
+
+  background-color: #e9e9f0;
+}
+
+.el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+
+  border: 20px solid #3366ff;
+  background-color: #99b2ff;
+  color: rgba(255, 255, 255, 0.9);
+  font: bold 60px "Arial", sans-serif;
+  text-align: center;
+}
+
+.el--green {
+  background-color: #a3d095;
+  border: 20px solid #518d3f;
+}
